@@ -191,9 +191,9 @@ a. Mi edad es igual a la de mi compañero: false
 b. Mi edad es mayor a la de mi compañero: true
 c. Mi edad es menor a la de mi compañero: false */
 
-let edadMia = prompt("Mi edad");
+let edadMia = Number(prompt("Mi edad"));
 
-let edadCompanero = prompt("Edad de tu compañero");
+let edadCompanero = Number(prompt("Edad de tu compañero"));
 
 let edadesIguales = edadMia === edadCompanero;
 let soyMayor = edadMia > edadCompanero;
@@ -209,8 +209,8 @@ resultante de si la persona es mayor de 6 años y además tiene una altura míni
 120 cm y mostrar por consola un mensaje como el siguiente: Puede subir a la
 atracción y el valor de la variable resultante.*/
 
-let edad = prompt("Edad en números");
-let altura = prompt("altura en centímetros");
+let edad = Number(prompt("Edad en números"));
+let altura = Number(prompt("altura en centímetros"));
 
 let puedeSubir = edad>6 && altura>= 120;
 console.log("Puede subir a la atracción ", puedeSubir);
@@ -222,7 +222,7 @@ tiene pase “VIP” o si posee un saldo mayor a 1000. Mostrando un mensaje que 
 persona puede pasar y el resultado de la variable. */
 
 let pase = prompt("Ingresa tu pase");
-let saldo = prompt("ingresa tu saldo");
+let saldo = Number(prompt("ingresa tu saldo"));
 let puedePasar = pase == "vip" || saldo >1000;
 console.log("La persona puede pasar", puedePasar);
 
